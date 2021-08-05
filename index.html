@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tetrismari - a tetris clone by Tirumari</title>
+
+    <link rel="stylesheet" href="./index.css"/>
 </head>
 <body>
-    <canvas id="singleTetris"></canvas>
+    <div id="game">
+        <div class="canvasContainer">
+            <canvas id="tetrisCanvas" width="400" height="800"></canvas>
+        </div>
+        <button id="startButton">START</button>
+    </div>
 
-    <script src="tetris.js"></script>
-    <script src="tetrominoes.js"></script>
+    <script src="tetris.js" type="module"></script>
+    <script src="tetrominoes.js" type="module"></script>
+    <script src="interface.js" type="module"></script>
 </body>
 </html>
